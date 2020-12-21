@@ -1,0 +1,452 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>MinskSports</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'Website/css/bootstrap.min.css' %}">
+    <!-- owl css -->
+    <link rel="stylesheet" href="{% static 'Website/css/owl.carousel.min.css' %}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{% static 'Website/css/style.css' %}">
+    <!-- responsive-->
+    <link rel="stylesheet" href="{% static 'Website/css/responsive.css' %}">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+
+        <!-- end loader -->
+
+        <div class="sidebar">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+
+                <div id="dismiss">
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+
+                <ul class="list-unstyled components">
+
+                    <li class="active">
+                        <a href=" ">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#about">О Нас</a>
+                    </li>
+                    <li>
+                        <a href="#training">Цены</a>
+                    </li>
+                    <li>
+                        <a href="#gallery">Галерея</a>
+                    </li>
+                    <li>
+                        <a href="#review">Обзор</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Контакты</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+        <div id="content">
+            <!-- header -->
+            <header>
+                <div class="container">
+                    <div class="row bor_bottom">
+                        <div class="col-md-3">
+                            <div class="full">
+                                <a class="logo" href=" "><img src="{% static 'Website/images/logo.png' %}" alt="#" /></a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                            <ul class="social_top_icon">
+                                <li> <a href="https://www.facebook.com/profile.php?id=100001162931323"><i class="fa fa-facebook-f"></i></a></li>
+                                <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                            <div class="full">
+                                <div class="right_header_info">
+                                    <ul>
+                                        <li>
+                                            <button type="button" id="sidebarCollapse">
+                                                <img src="{% static 'Website/images/menu_icon.png' %}" alt="#">
+                                            </button>
+                                        </li>
+                                        <li><img style="margin-right: 15px;" src="{% static 'Website/images/search_icon.png' %}" alt="#"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end header -->
+            <!-- start slider section -->
+            <div class="slider_section banner_main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="main_text">
+                                <h1>Добро Пожаловать <br><strong class="bold_text">Minsk</strong><strong class="bold_text_black">Sport</strong></h1>
+                                <span>Движение - это жизнь ! Занятие спортом укрепляет здоровье =)</span>
+                                <a href="#">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end slider section -->
+
+            <!-- six_box-->
+            <div class="container">
+                <div class="six_box">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 pppp">
+                            <div class="black_box">
+                                <h3>Скалодром</h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 pppp">
+                            <div class="black_box yellow_box">
+                                <h3>Плаванье</h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 pppp">
+                            <div class="black_box">
+                                <h3>Стрельба из лука</h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 pppp">
+                            <div class="black_box yellow_box">
+                                <h3>Гольф</h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 pppp">
+                            <div class="black_box">
+                                <h3>Теннис</h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 pppp">
+                            <div class="black_box yellow_box">
+                                <h3>Силовые тренировки</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end six_box-->
+
+            <!-- about -->
+            <div id="about" class="about">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                            <div class="about_img">
+                                <figure><img src="{% static 'Website/images/about-img.jpg' %}" alt="#" /></figure>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 pa-ing">
+                            <div class="about_text">
+                                <div class="about_text_box">
+                                    <h2>О Нас MinskSport</h2>
+                                    <H1 style="background-color:#ff9911">Приглашаем посетить наш тренажерный зал. Не надо стеснятся,
+                                        наши велеколепные тренера с большим проффессиональным опытом помогут вам стать еще сильнее !</H1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end about -->
+
+            <!-- training -->
+            <div id="training" class="training">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">
+
+                                <h2>Цены<strong class="black"> на абонименты</strong></h2>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="training_packages_bg">
+                         <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <div class="training_packages_box">
+                                    <h3>Плавание</h3>
+                                    <span>$<strong class="white_bold">85</strong></span>
+                                    <p>В месяц</p>
+                                    <p>-20%</p>
+                                </div>
+                            </div><div class="training_packages_box">
+                                    <h3>Скалодром</h3>
+                                    <span>$<strong class="white_bold">55</strong></span>
+                                    <p>В месяц</p>
+                                    <p>-10%</p>
+                                </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <div class="training_packages_box">
+                                    <h3>Теннис</h3>
+                                    <span>$<strong class="white_bold">95</strong></span>
+                                    <p>В месяц</p>
+                                    <p>-15%</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <div class="training_packages_box">
+                                    <h3>Гольф</h3>
+                                    <span>$<strong class="white_bold">185</strong></span>
+                                    <p>В месяц</p>
+                                    <p>-15%</p>
+                                </div>
+                            </div><div class="training_packages_box">
+                                    <h3>Стрельба из лука</h3>
+                                    <span>$<strong class="white_bold">115</strong></span>
+                                    <p>В месяц</p>
+                                    <p>-15%</p>
+                                </div><div class="training_packages_box">
+                                    <h3>Силовые тренировки</h3>
+                                    <span>$<strong class="white_bold">85</strong></span>
+                                    <p>В месяц</p>
+                                    <p>-25%</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end training -->
+
+            <!-- Gallery -->
+            <div id="gallery" class="Gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">
+                                <h2>Наша<strong class="black"> Галерея</strong></h2>
+                                <span>Присылайте нам фото ваших тренеровок! Самые лучшие фото будут опубликованы на нашем сайте !</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-12 mar_bottom">
+                                    <div class="Gallery_box">
+                                        <figure><img src="{% static 'Website/images/gallery1.jpg' %}" alt="#" /></figure>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="Gallery_box">
+                                        <figure><img src="{% static 'Website/images/gallery4.jpg' %}" alt="#" /></figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mar_bottom">
+                                    <div class="Gallery_box">
+                                        <figure><img src="{% static 'Website/images/gallery2.jpg' %}" alt="#" /></figure>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mar_bottom">
+                                    <div class="Gallery_box">
+                                        <figure><img src="{% static 'Website/images/gallery3.jpg' %}" alt="#" /></figure>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                    <div class="Gallery_box">
+                                        <figure><img src="{% static 'Website/images/gallery5.jpg' %}" alt="#" /></figure>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                    <div class="Gallery_box">
+                                        <figure><img src="{% static 'Website/images/gallery6.jpg' %}" alt="#" /></figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Gallery -->
+
+            <!-- Reviwe -->
+            <div id="review" class="Reviwe">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">
+                                <h2>Review</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="Reviwe_box">
+                                <i><img src="{% static 'Website/images/title.png' %}" alt="#"/></i>
+                                <h3>Jone due</h3>
+                                <p>It is a long established fact that a reader wil
+                                    <br> l be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                    <br>has a more-or-less normal distribution of letters,</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Reviwe -->
+
+            <!-- footer -->
+            <div id="contact" class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">
+                                <h2>Контактные<strong class="black"> Данные</strong></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid padddd">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 padddd">
+                    <div class="map_section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+
+                                    <form class="main_form">
+                                        <div class="row">
+                                            <H3 class="black">MinskSport: +375292362319</H3>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="map">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <p>© 2020 Minsksports <a style="background-color: #005cbf" href="https://vk.com/">Вконтакте</a></p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <ul class="social_icon">
+                                    <li> <a href="https://www.facebook.com/profile.php?id=100001162931323"><i class="fa fa-facebook-f"></i></a></li>
+                                    <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <p><a style="background-color: #005cbf" href=" ">Вверх^</a></p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- Javascript files-->
+    <script src="{% static 'Website/js/jquery.min.js' %}"></script>
+    <script src="{% static 'Website/js/popper.min.js' %}"></script>
+    <script src="{% static 'Website/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'Website/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'Website/js/custom.js' %}"></script>
+    <script src="{% static 'Website/js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+
+    <script src="{% static 'Website/js/jquery-3.0.0.min.js' %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+    <script>
+        // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+        // Australia.
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: {
+                    lat: 40.645037,
+                    lng: -73.880224
+                },
+            });
+
+            var image = {% static 'Website/images/maps-and-flags.png' %};
+            var beachMarker = new google.maps.Marker({
+                position: {
+                    lat: 40.645037,
+                    lng: -73.880224
+                },
+                map: map,
+                icon: image
+            });
+        }
+    </script>
+    <!-- google map js -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.
+                                4046893619357!2d27.50683531599317!3d53.92455383894424!2m3!1f0!2f0!3f0!3m2
+                                !1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc569216ea86f%3A0x77dbf8f25aa66649!2z
+                                0YPQu9C40YbQsCDQotC40LzQuNGA0Y_Qt9C10LLQsCA2NSwg0JzQuNC90YHQug!5e0!3m2!1s
+                                ru!2sby!4v1608484095547!5m2!1sru!2sby" width="1950" height="450" frameborder="0"
+                                style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <!-- end google map js -->
+
+</body>
+
+</html>
