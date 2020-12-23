@@ -1,7 +1,8 @@
 from pathlib import Path
 import os
-import django_heroku
+
 import dj_database_url
+import dyn as dyn
 from decouple import config
 
 
@@ -16,9 +17,26 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '7)tzy++8*4x_d(*y6geb4113c)yt8uc3_0iw#r97r04-mv_2w-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = dyn.MODE_DEBUG
 
-ALLOWED_HOSTS = []
+if not DEBUG:
+    sentry_sdk.init(dyn.SENTRY_DSN, traces_sample_rate=1.0)
+
+_this_file = Path(__file__).resolve()
+
+DIR_PROJECT = _this_file.parent.resolve()
+
+DIR_SRC = DIR_PROJECT.parent.resolve()
+
+DIR_REPO = DIR_SRC.parent.resolve()
+
+SECRET_KEY = dyn.SECRET_KEY
+
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    dyn.HOST,
+]
 
 
 # Application definition
@@ -116,9 +134,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    DIR_PROJECT / "static",
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedMainfestStaticFilesStorage'
-
-django_heroku.settings(locals())
+if not DEBUG:
+    STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
